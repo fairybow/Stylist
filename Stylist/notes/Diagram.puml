@@ -1,0 +1,20 @@
+@startuml
+!theme crt-amber
+
+/'
+Diagram
+https://www.plantuml.com/
+'/
+
+top to bottom direction
+
+/'
+REDO!
+'/
+
+skinparam {
+    wrapWidth 400
+    maxMessageSize 400
+}
+
+@enduml

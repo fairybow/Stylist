@@ -1,0 +1,9 @@
+QPlainTextEdit
+{
+    background-color:            @backgroundColor;
+    color:                       @fontColor;
+    font-family:                 @font;
+    font-size:                   @fontSize;
+    selection-color:             @selectionFontColor;
+    selection-background-color:  @selectionBgColor
+}

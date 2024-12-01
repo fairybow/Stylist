@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5ee657f8-3fe8-48ef-b787-9f02fc696941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Templates">
+      <UniqueIdentifier>{90739020-c33d-404c-8783-f6ae32aaf724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Base QSS">
+      <UniqueIdentifier>{cfd66485-6894-4c5b-bedd-e345a2db9d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Themes">
+      <UniqueIdentifier>{f8881718-afd7-4408-b72e-a31e3db360cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\StylistDemo.qrc">
+      <Filter>Resources</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\StylistDemo.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sample\AltWindowBase.qss">
+      <Filter>Resources\Base QSS</Filter>
+    </None>
+    <None Include="resources\sample\EditorBase.qss">
+      <Filter>Resources\Base QSS</Filter>
+    </None>
+    <None Include="resources\sample\ChildWindow.stylist_template">
+      <Filter>Resources\Templates</Filter>
+    </None>
+    <None Include="resources\sample\Editor.stylist_template">
+      <Filter>Resources\Templates</Filter>
+    </None>
+    <None Include="resources\sample\MainWindow.stylist_template">
+      <Filter>Resources\Templates</Filter>
+    </None>
+    <None Include="resources\sample\Theme1.editor_theme">
+      <Filter>Resources\Themes</Filter>
+    </None>
+    <None Include="resources\sample\Theme1.window_theme">
+      <Filter>Resources\Themes</Filter>
+    </None>
+    <None Include="resources\sample\Theme2.editor_theme">
+      <Filter>Resources\Themes</Filter>
+    </None>
+    <None Include="resources\sample\Theme2.window_theme">
+      <Filter>Resources\Themes</Filter>
+    </None>
+  </ItemGroup>
+</Project>

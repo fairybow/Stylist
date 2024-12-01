@@ -1,0 +1,4 @@
+ChildWindow
+{
+    background-color:   @backgroundColor
+}

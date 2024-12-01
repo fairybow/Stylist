@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sample/AltWindowBase.qss</file>
+        <file>sample/EditorBase.qss</file>
+        <file>sample/ChildWindow.stylist_template</file>
+        <file>sample/Editor.stylist_template</file>
+        <file>sample/MainWindow.stylist_template</file>
+        <file>sample/Theme1.editor_theme</file>
+        <file>sample/Theme1.window_theme</file>
+        <file>sample/Theme2.editor_theme</file>
+        <file>sample/Theme2.window_theme</file>
+    </qresource>
+</RCC>

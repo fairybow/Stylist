@@ -1,0 +1,4 @@
+QPlainTextEdit
+{
+    border: 1px
+}

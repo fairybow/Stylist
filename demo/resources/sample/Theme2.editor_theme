@@ -1,0 +1,11 @@
+{
+  "name": "Pocket (Theme 2)",
+  "variables": {
+    "backgroundColor": "#b6bc9f",
+    "fontColor": "#1b211b",
+    "font": "Consolas",
+    "fontSize": "24pt",
+    "selectionFontColor": "#b6bc9f",
+    "selectionBgColor": "#1b211b"
+  }
+}

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{30f0b580-951a-4575-8d9a-92bf69132523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{b56427e5-708e-4510-b8ff-0d9c1cd2461b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notes">
+      <UniqueIdentifier>{4a48dfe4-f907-4ce9-8e0e-4c3231784885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Coco">
+      <UniqueIdentifier>{8c528939-f78e-48e1-a7a2-6ea599a1a85d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Coco\Include">
+      <UniqueIdentifier>{b0d41c18-36cc-402d-9741-cd95df26bddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Coco\Source">
+      <UniqueIdentifier>{051a66e8-14ff-438c-998e-5086a96cc697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{14456a78-d988-4421-b7aa-f1b8bb0089a9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="submodules\Coco\include\Coco\Path.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Io.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Debug.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WidgetGroup.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Stylist\Global.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\src\Debug.h">
+      <Filter>Coco\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Global.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NestedPrivate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StylistPrivate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Layout.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Theme.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ControllerPrivate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="notes\Notes.md">
+      <Filter>Notes</Filter>
+    </None>
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
+    <None Include="scripts\PostBuild.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="notes\VS.md">
+      <Filter>Notes</Filter>
+    </None>
+    <None Include="..\cpp.hint" />
+    <None Include="notes\Diagram.puml">
+      <Filter>Notes</Filter>
+    </None>
+    <None Include="scripts\ConsumerTestPreBuild.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="scripts\UpdateSubmodules.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="scripts\RemoveCoco.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="scripts\AddCoco.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="scripts\WinGitRoot.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="scripts\CopyInRepoCocoChanges.bat">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="notes\AutoSwitchCode.md">
+      <Filter>Notes</Filter>
+    </None>
+    <None Include="..\.gitattributes" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Stylist.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\AbstractPageWidget.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\DropDownPageWidget.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Path.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\StackedWidget.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Switch.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\TabPageWidget.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Io.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WidgetGroup.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Layout.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Theme.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="submodules\Coco\include\Coco\AbstractPageWidget.h">
+      <Filter>Coco\Include</Filter>
+    </QtMoc>
+    <QtMoc Include="submodules\Coco\include\Coco\DropDownPageWidget.h">
+      <Filter>Coco\Include</Filter>
+    </QtMoc>
+    <QtMoc Include="submodules\Coco\include\Coco\StackedWidget.h">
+      <Filter>Coco\Include</Filter>
+    </QtMoc>
+    <QtMoc Include="submodules\Coco\include\Coco\Switch.h">
+      <Filter>Coco\Include</Filter>
+    </QtMoc>
+    <QtMoc Include="submodules\Coco\include\Coco\TabPageWidget.h">
+      <Filter>Coco\Include</Filter>
+    </QtMoc>
+    <QtMoc Include="include\Stylist\Stylist.h">
+      <Filter>Include</Filter>
+    </QtMoc>
+    <QtMoc Include="include\Stylist\Controller.h">
+      <Filter>Include</Filter>
+    </QtMoc>
+  </ItemGroup>
+</Project>

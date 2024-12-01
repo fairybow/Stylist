@@ -1,0 +1,11 @@
+{
+  "name": "Alice (Theme 1)",
+  "variables": {
+    "backgroundColor": "#444",
+    "fontColor": "aliceblue",
+    "font": "Calibri",
+    "fontSize": "24pt",
+    "selectionFontColor": "#444",
+    "selectionBgColor": "aliceblue"
+  }
+}
