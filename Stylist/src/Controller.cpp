@@ -26,6 +26,7 @@
 // Stylist::Controller definitions
 //------------------------------------------------------------
 
+// Try paint event for UI, wrt group count?
 Controller::Controller(Stylist* stylist, QWidget* parent)
     : QWidget(parent)
     , m_private(std::make_unique<Private>(stylist, this))

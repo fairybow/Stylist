@@ -6,6 +6,10 @@ A program using Stylist can give users a way to choose and customize themes with
 
 Stylist is being developed as a componenet of [Fernanda](https://github.com/fairybow/Fernanda).
 
+<kbd>
+    <img src="demo/early-demo.gif" alt=""/>
+</kbd>
+
 ## Usage
 
 ### Note
@@ -13,10 +17,16 @@ Stylist is being developed as a componenet of [Fernanda](https://github.com/fair
 Stylist API functions follow this general format:
 
 ```
-m_stylist->setProperty<QWidgetT>(const Value& value, int role = 0);
+m_stylist->setProperty<QWidgetT>("value");
+auto value = m_stylist->property<QWidgetT>();
+
+// If group was defined with the optional role parameter, it must be included:
+m_stylist->setProperty<QWidgetT>("value", 1);
+auto value = m_stylist->property<QWidgetT>(1);
 
 // Or:
-// m_stylist->setProperty(typeid(QWidgetT), const Value& value, int role = 0);
+// m_stylist->setProperty(typeid(QWidgetT), "value");
+// auto value = m_stylist->property(typeid(QWidgetT));
 ```
 
 The type of widget is specified with `typeid(T)` or as a template parameter. The optional `role` parameter allows the creation of separate groups with the same type. So, a type-group is defined as `{ T, role = 0 }`.
