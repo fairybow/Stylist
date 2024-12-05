@@ -4,9 +4,8 @@
 
 Roadmap
 
-- Push R/D dll/lib to diff folders
 - Edit window themes to use menu font color
-- Reverse wondow theme order
+- Reverse window theme order (lol wondow)
 - Add demo of using the variable in multiple places of template, not just one
 - Go through and make any non-api function underscore-prefixed?
 - Default args in QSS templates (for if a theme doesn't use a template arg--for now, they must match)

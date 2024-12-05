@@ -51,7 +51,7 @@ $(SolutionDir)Stylist\lib;%(AdditionalLibraryDirectories)
 Linker > Input
 
 ```
-Stylist.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
+$(IntDir)Stylist.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
 ```
 
 ## Consumer Test
@@ -77,5 +77,5 @@ $(ProjectDir)Stylist\lib;%(AdditionalLibraryDirectories)
 Linker > Input
 
 ```
-Stylist.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
+$(IntDir)Stylist.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)
 ```
