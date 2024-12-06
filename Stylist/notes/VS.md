@@ -6,6 +6,7 @@
 > Remember to change repo in consuming test project script pre-build call (it's in there twice!). Remember to clean builds and let scripts build copy correct DLL.
 
 ## Language standard
+
 ```
 ISO C++20 Standard (/std:c++20)
 ```
