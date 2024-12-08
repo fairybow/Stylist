@@ -9,3 +9,4 @@
 #define qDebug QMessageLogger(QT_MESSAGELOG_FILE, QT_MESSAGELOG_LINE, QT_MESSAGELOG_FUNC).debug
 #define qDebug
 #define Q_LOGGING_CATEGORY(name, __VA_ARGS__) const QLoggingCategory &name() { static const QLoggingCategory category(__VA_ARGS__); return category; }
+#define Q_LOGGING_CATEGORY
