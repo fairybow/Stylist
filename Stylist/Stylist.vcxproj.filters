@@ -45,9 +45,6 @@
     <ClInclude Include="submodules\Coco\include\Coco\Global.h">
       <Filter>Coco\Include</Filter>
     </ClInclude>
-    <ClInclude Include="src\NestedPrivate.h">
-      <Filter>Source</Filter>
-    </ClInclude>
     <ClInclude Include="src\StylistPrivate.h">
       <Filter>Source</Filter>
     </ClInclude>

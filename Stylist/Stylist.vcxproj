@@ -19,7 +19,6 @@
     <ClInclude Include="src\Utility.h" />
     <ClInclude Include="src\WidgetGroup.h" />
     <ClInclude Include="src\Debug.h" />
-    <ClInclude Include="src\NestedPrivate.h" />
     <ClInclude Include="src\StylistPrivate.h" />
     <ClInclude Include="submodules\Coco\include\Coco\Global.h" />
     <ClInclude Include="submodules\Coco\include\Coco\Io.h" />
