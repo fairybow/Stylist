@@ -53,7 +53,7 @@ void Controller::dumpStylistGroupNames() const
 //------------------------------------------------------------
 
 Controller::Private::Private(Stylist* s, Controller* publicClass)
-    : NestedPrivate<Controller>(publicClass)
+    : Coco::Private<Controller>(publicClass)
     , stylist(s)
 {
 }
