@@ -24,12 +24,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="submodules\Coco\include\Coco\Path.h">
-      <Filter>Coco\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="submodules\Coco\include\Coco\Io.h">
-      <Filter>Coco\Include</Filter>
-    </ClInclude>
     <ClInclude Include="src\Debug.h">
       <Filter>Source</Filter>
     </ClInclude>
@@ -39,17 +33,8 @@
     <ClInclude Include="include\Stylist\Global.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="submodules\Coco\src\Debug.h">
-      <Filter>Coco\Source</Filter>
-    </ClInclude>
-    <ClInclude Include="submodules\Coco\include\Coco\Global.h">
-      <Filter>Coco\Include</Filter>
-    </ClInclude>
     <ClInclude Include="src\StylistPrivate.h">
       <Filter>Source</Filter>
-    </ClInclude>
-    <ClInclude Include="submodules\Coco\include\Coco\Layout.h">
-      <Filter>Coco\Include</Filter>
     </ClInclude>
     <ClInclude Include="src\Theme.h">
       <Filter>Source</Filter>
@@ -59,6 +44,24 @@
     </ClInclude>
     <ClInclude Include="src\ControllerPrivate.h">
       <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Global.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Io.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Layout.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Private.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\include\Coco\Path.h">
+      <Filter>Coco\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="submodules\Coco\src\Debug.h">
+      <Filter>Coco\Source</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -104,32 +107,8 @@
     <ClCompile Include="src\Stylist.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="submodules\Coco\src\AbstractPageWidget.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\DropDownPageWidget.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\Path.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\StackedWidget.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\Switch.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\TabPageWidget.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\Io.cpp">
-      <Filter>Coco\Source</Filter>
-    </ClCompile>
     <ClCompile Include="src\WidgetGroup.cpp">
       <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="submodules\Coco\src\Layout.cpp">
-      <Filter>Coco\Source</Filter>
     </ClCompile>
     <ClCompile Include="src\Theme.cpp">
       <Filter>Source</Filter>
@@ -137,23 +116,17 @@
     <ClCompile Include="src\Controller.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Io.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Layout.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="submodules\Coco\src\Path.cpp">
+      <Filter>Coco\Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="submodules\Coco\include\Coco\AbstractPageWidget.h">
-      <Filter>Coco\Include</Filter>
-    </QtMoc>
-    <QtMoc Include="submodules\Coco\include\Coco\DropDownPageWidget.h">
-      <Filter>Coco\Include</Filter>
-    </QtMoc>
-    <QtMoc Include="submodules\Coco\include\Coco\StackedWidget.h">
-      <Filter>Coco\Include</Filter>
-    </QtMoc>
-    <QtMoc Include="submodules\Coco\include\Coco\Switch.h">
-      <Filter>Coco\Include</Filter>
-    </QtMoc>
-    <QtMoc Include="submodules\Coco\include\Coco\TabPageWidget.h">
-      <Filter>Coco\Include</Filter>
-    </QtMoc>
     <QtMoc Include="include\Stylist\Stylist.h">
       <Filter>Include</Filter>
     </QtMoc>

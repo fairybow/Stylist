@@ -15,15 +15,15 @@
 
 #pragma once
 
+#include "Coco/Private.h"
 #include "Controller.h"
-#include "NestedPrivate.h"
 #include "WidgetGroup.h"
 
 #include <QComboBox>
 
 using Controller = Stylist::Controller;
 
-class Controller::Private : public NestedPrivate<Controller>
+class Controller::Private : public Coco::Private<Controller>
 {
 public:
     Private(Stylist* s, Controller* publicClass);

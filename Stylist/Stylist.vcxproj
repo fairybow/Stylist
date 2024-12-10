@@ -11,6 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="submodules\Coco\include\Coco\Global.h" />
+    <ClInclude Include="submodules\Coco\include\Coco\Io.h" />
+    <ClInclude Include="submodules\Coco\include\Coco\Layout.h" />
+    <ClInclude Include="submodules\Coco\include\Coco\Private.h" />
+    <ClInclude Include="submodules\Coco\include\Coco\Path.h" />
+    <ClInclude Include="submodules\Coco\src\Debug.h" />
     <QtMoc Include="include\Stylist\Stylist.h" />
     <QtMoc Include="include\Stylist\Controller.h" />
     <ClInclude Include="include\Stylist\Global.h" />
@@ -20,16 +26,6 @@
     <ClInclude Include="src\WidgetGroup.h" />
     <ClInclude Include="src\Debug.h" />
     <ClInclude Include="src\StylistPrivate.h" />
-    <ClInclude Include="submodules\Coco\include\Coco\Global.h" />
-    <ClInclude Include="submodules\Coco\include\Coco\Io.h" />
-    <ClInclude Include="submodules\Coco\include\Coco\Layout.h" />
-    <ClInclude Include="submodules\Coco\include\Coco\Path.h" />
-    <ClInclude Include="submodules\Coco\src\Debug.h" />
-    <QtMoc Include="submodules\Coco\include\Coco\TabPageWidget.h" />
-    <QtMoc Include="submodules\Coco\include\Coco\Switch.h" />
-    <QtMoc Include="submodules\Coco\include\Coco\StackedWidget.h" />
-    <QtMoc Include="submodules\Coco\include\Coco\DropDownPageWidget.h" />
-    <QtMoc Include="submodules\Coco\include\Coco\AbstractPageWidget.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitattributes" />
@@ -53,14 +49,9 @@
     <ClCompile Include="src\Theme.cpp" />
     <ClCompile Include="src\WidgetGroup.cpp" />
     <ClCompile Include="src\Stylist.cpp" />
-    <ClCompile Include="submodules\Coco\src\AbstractPageWidget.cpp" />
-    <ClCompile Include="submodules\Coco\src\DropDownPageWidget.cpp" />
     <ClCompile Include="submodules\Coco\src\Io.cpp" />
     <ClCompile Include="submodules\Coco\src\Layout.cpp" />
     <ClCompile Include="submodules\Coco\src\Path.cpp" />
-    <ClCompile Include="submodules\Coco\src\StackedWidget.cpp" />
-    <ClCompile Include="submodules\Coco\src\Switch.cpp" />
-    <ClCompile Include="submodules\Coco\src\TabPageWidget.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{245B850E-649D-4B89-89B5-7AF14B228E33}</ProjectGuid>

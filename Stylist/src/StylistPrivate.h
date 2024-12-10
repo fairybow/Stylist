@@ -16,7 +16,7 @@
 #pragma once
 
 #include "Coco/Path.h"
-#include "NestedPrivate.h"
+#include "Coco/Private.h"
 #include "Stylist.h"
 #include "Theme.h"
 #include "WidgetGroup.h"
@@ -24,7 +24,7 @@
 #include <QList>
 #include <QPointer>
 
-class Stylist::Private : public NestedPrivate<Stylist>
+class Stylist::Private : public Coco::Private<Stylist>
 {
 public:
     //------------------------------------------------------------
