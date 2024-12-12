@@ -156,7 +156,7 @@ void WidgetGroup::_resetThemes()
 
     m_themes.clear();
 
-    auto theme_paths = Coco::Path::findIn
+    auto theme_paths = Coco::Path::findInDir
     (
         m_themesDirectories,
         m_themesFileExtension

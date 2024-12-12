@@ -41,8 +41,7 @@ Theme::Theme(const Theme& theme) = default;
 Theme::Theme(const Coco::Path& path)
     : m_path(path)
 {
-    auto theme_file_text = Coco::Io::readTxt(path);
-    m_jsonDoc = QJsonDocument::fromJson(theme_file_text.toUtf8());
+    m_jsonDoc = Coco::Io::readJson(path);
 }
 
 Theme::~Theme() = default;
