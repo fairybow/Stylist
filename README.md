@@ -4,7 +4,7 @@ Stylist is a small, in-progress Qt C++ library adding an in-app system for live-
 
 A program using Stylist can give users a way to choose and customize themes without using QSS (on the user-side).
 
-Stylist is being developed as a componenet of [Fernanda](https://github.com/fairybow/Fernanda).
+Stylist is being developed as a component of [Fernanda](https://github.com/fairybow/Fernanda).
 
 <kbd>
     <img src="demo/early-demo.gif" alt=""/>
