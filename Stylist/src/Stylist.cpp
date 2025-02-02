@@ -104,11 +104,12 @@ void Stylist::dump() const
 
 void Stylist::dumpGroupsInfo() const
 {
-    constexpr auto format = "\n\tGroup %1 info:\
-\n\t\tName: %2\
-\n\t\tType name: %3\
-\n\t\tKey: %4\
-\n\t\tTheme file extension: %5\n";
+    constexpr auto format =         \
+        "\n\tGroup %1 info:"        \
+        "\n\t\tName: %2"            \
+        "\n\t\tType name: %3"       \
+        "\n\t\tKey: %4"             \
+        "\n\t\tTheme file extension: %5\n";
 
     for (auto i = 0; i < m_private->widgetGroups.count(); ++i)
     {
@@ -162,11 +163,11 @@ void Stylist::printGroupInfo(std::type_index qWidgetType, int role) const
     {
         auto group_id = group->id();
 
-        // The output will actually render the leading spaces, so no indent
-        constexpr auto format = "\n\tGroup \"%1\" info:\
-\n\t\tType name: %2\
-\n\t\tKey: %3\
-\n\t\tTheme file extension: %4\n";
+        constexpr auto format =         \
+            "\n\tGroup \"%1\" info:"    \
+            "\n\t\tType name: %2"       \
+            "\n\t\tKey: %3"             \
+            "\n\t\tTheme file extension: %4\n";
 
         qDebug(D::log) << dUtf8Format
         (
