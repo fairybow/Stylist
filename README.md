@@ -119,7 +119,7 @@ Copy the `lib` and `include` folders to the target repo, and include `lib\Stylis
 
 This tool is limited, of course, by any limitations of Qt Stylesheets. Of particular note, QWidgets will inherit style from their parents. For example, setting the following base QSS on a `QMainWindow` will also remove the `QSizeGrip` from its child windows:
 
-```cpp
+```css
 QSizeGrip
 {
     image: url(none);
