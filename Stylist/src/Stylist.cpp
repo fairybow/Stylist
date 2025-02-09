@@ -146,13 +146,12 @@ void Stylist::dumpTemplates() const
     }
 }
 
+// If we are not modifying or consuming the event, we should always return the
+// default filter result
 bool Stylist::eventFilter(QObject* watched, QEvent* event)
 {
     if (event->type() == QEvent::Close)
-    {
         m_private->handleCloseEvent(watched);
-        return false;
-    }
 
     return QObject::eventFilter(watched, event);
 }
@@ -365,11 +364,11 @@ WidgetGroup* Stylist::Private::make(const WidgetGroup::Id& id)
 
 QDialog* Stylist::Private::newDialog()
 {
-    auto dialog = new QDialog;
+    auto dialog = new QDialog{};
     auto themes_widget = new Controller(publicClass(), dialog);
     auto button = new QPushButton("OK", dialog);
     auto main_layout = new QVBoxLayout(dialog);
-    auto button_layout = new QVBoxLayout;
+    auto button_layout = new QVBoxLayout{};
 
     main_layout->addWidget(themes_widget);
     main_layout->addLayout(button_layout);
