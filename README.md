@@ -16,7 +16,7 @@ Stylist is being developed as a component of [Fernanda](https://github.com/fairy
 
 Stylist API functions follow this general format:
 
-```
+```cpp
 m_stylist->setProperty<QWidgetT>("value");
 auto value = m_stylist->property<QWidgetT>();
 
@@ -119,7 +119,7 @@ Copy the `lib` and `include` folders to the target repo, and include `lib\Stylis
 
 This tool is limited, of course, by any limitations of Qt Stylesheets. Of particular note, QWidgets will inherit style from their parents. For example, setting the following base QSS on a `QMainWindow` will also remove the `QSizeGrip` from its child windows:
 
-```
+```cpp
 QSizeGrip
 {
     image: url(none);
