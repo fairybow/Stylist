@@ -10,6 +10,10 @@
 * Updated: 2024-12-1
 */
 
+/// @todo Redo code style
+/// @todo Connect destroyed signal to lambda that runs clean and remove it elsewhere
+/// @todo IWYU
+
 #pragma once
 
 #include "Global.h"
