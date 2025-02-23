@@ -13,6 +13,9 @@
 /// @todo Redo code style
 /// @todo Connect destroyed signal to lambda that runs clean and remove it elsewhere
 /// @todo IWYU
+/// @todo Update scripts (from Fernanda dev)
+/// @todo License header txt (from Fernanda dev)
+/// @todo Restructure filters
 
 #pragma once
 
