@@ -7,10 +7,9 @@
 * This file uses Qt 6. Qt is a free and open-source widget toolkit for creating
 * graphical user interfaces. For more information, visit <https://www.qt.io/>.
 *
-* Updated: 2024-12-1
+* Updated: 2025-02-22
 */
 
-#include "Coco/Layout.h"
 #include "Controller.h"
 #include "ControllerPrivate.h"
 #include "Debug.h"
@@ -18,9 +17,12 @@
 
 #include <QButtonGroup>
 #include <QCheckBox>
+#include <QGridLayout>
 #include <QGroupBox>
+#include <QHBoxLayout>
 #include <QPushButton>
 #include <QStackedWidget>
+#include <QVBoxLayout>
 
 //------------------------------------------------------------
 // Stylist::Controller definitions

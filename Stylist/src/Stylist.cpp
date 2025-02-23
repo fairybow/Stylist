@@ -7,11 +7,10 @@
 * This file uses Qt 6. Qt is a free and open-source widget toolkit for creating
 * graphical user interfaces. For more information, visit <https://www.qt.io/>.
 *
-* Updated: 2025-2-2
+* Updated: 2025-02-22
 */
 
 #include "Coco/Io.h"
-#include "Coco/Layout.h"
 #include "Controller.h"
 #include "Debug.h"
 #include "Stylist.h"
@@ -22,6 +21,7 @@
 #include <QDialog>
 #include <QMetaObject>
 #include <QPushButton>
+#include <QVBoxLayout>
 
 //------------------------------------------------------------
 // Stylist definitions
