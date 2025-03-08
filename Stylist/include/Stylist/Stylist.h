@@ -16,6 +16,7 @@
 /// @todo Update scripts (from Fernanda dev)
 /// @todo License header txt (from Fernanda dev)
 /// @todo Restructure filters
+/// @todo Probably make controller dialog blocking if it isn't already
 
 #pragma once
 
