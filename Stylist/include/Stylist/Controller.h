@@ -17,10 +17,10 @@
 
 #include <memory>
 
-// For AOT, would need to be implemented in the dialog not the widget itself
-// The built-in dialog is only modeless right now, so a toggle for it in Stylist
+// For AOT, would need to be implemented in the dialog not the widget itself The
+// built-in dialog is only modeless right now, so a toggle for it in Stylist
 // makes sense, if it stays that way. If we switch to modal or make it an
-// optiona, then may not make sense (or could just have toggle only with
+// optional, then may not make sense (or could just have toggle only with
 // modeless)
 class STYLIST_EXPORT Stylist::Controller : public QWidget
 {

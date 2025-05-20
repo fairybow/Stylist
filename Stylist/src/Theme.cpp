@@ -41,7 +41,7 @@ Theme::Theme(const Theme& theme) = default;
 Theme::Theme(const Coco::Path& path)
     : m_path(path)
 {
-    m_jsonDoc = Coco::Io::readJson(path);
+    m_jsonDoc = Coco::Io::Json::read(path);
 }
 
 Theme::~Theme() = default;

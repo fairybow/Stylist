@@ -14,6 +14,8 @@
 /// AS IN, CHACHED THEME, TEMPLATE EMPTY OR NULL OR WHAT
 
 #include "Coco/Io.h"
+#include "Coco/Path.h"
+#include "Coco/PathUtil.h"
 #include "Debug.h"
 #include "Theme.h"
 #include "Utility.h"
@@ -156,7 +158,7 @@ void WidgetGroup::_resetThemes()
 
     m_themes.clear();
 
-    auto theme_paths = Coco::Path::findInDir
+    auto theme_paths = Coco::PathUtil::fromDir
     (
         m_themesDirectories,
         m_themesFileExtension
@@ -297,7 +299,7 @@ void WidgetGroup::setThemesDirectories(const QList<Coco::Path>& paths)
 void WidgetGroup::setThemesExtension(const QString& fileExtension)
 {
     if (m_themesFileExtension == fileExtension) return;
-    m_themesFileExtension = Coco::Path::resolveExtension(fileExtension).toQString();
+    m_themesFileExtension = Coco::PathUtil::resolveExt(fileExtension);
 
     if (!m_themesDirectories.isEmpty())
         _resetThemes();

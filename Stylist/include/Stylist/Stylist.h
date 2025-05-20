@@ -135,7 +135,7 @@ public:
     // Themes will be added whenever directories and theme file extension are
     // both set. In WidgetGroup private, themes are just reset each time when
     // calling setThemesDirectories. We keep a list in Stylist::Private, add to
-    // that, and call setThemesDirectories with the appeneded list
+    // that, and call setThemesDirectories with the appended list
     void addThemesDirectory(const std::filesystem::path& directory);
 
     void setUseTheme

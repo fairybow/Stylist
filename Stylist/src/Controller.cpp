@@ -66,7 +66,6 @@ Controller::Private::Private(Stylist* s, Controller* publicClass)
 // LOL shut up
 void Controller::Private::createMultiGroupUi()
 {
-    auto pub = publicClass();
     auto stacked_widget = new QStackedWidget(pub);
 
     // For multiple groups, we need indexing, auto-switch, a top QGroupBox,
@@ -162,7 +161,6 @@ void Controller::Private::createMultiGroupUi()
 
 void Controller::Private::createSingleGroupUi()
 {
-    auto pub = publicClass();
     auto& group = stylistGroups().first();
 
     // Make a QGroupBox for the group's themes QComboBox
@@ -217,8 +215,6 @@ void Controller::Private::createSingleGroupUi()
 
 void Controller::Private::initUi()
 {
-    auto pub = publicClass();
-
     pub->setLayout(new QVBoxLayout);
 
     // Good idea?

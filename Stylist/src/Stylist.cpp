@@ -23,6 +23,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
+#include <memory>
+
 //------------------------------------------------------------
 // Stylist definitions
 //------------------------------------------------------------
@@ -67,11 +69,11 @@ void Stylist::define
     if (auto group = m_private->findOrMake({ qWidgetType, role }))
     {
         group->setName(name);
-        group->setThemesTemplate(Coco::Io::readTxt(themesTemplatePath));
+        group->setThemesTemplate(Coco::Io::Txt::read(themesTemplatePath));
         group->setThemesExtension(themesFileExtension);
 
-        if (Coco::Path::isValid(baseQssPath))
-            group->setBaseQss(Coco::Io::readTxt(baseQssPath));
+        if (Coco::Path::exists(baseQssPath))
+            group->setBaseQss(Coco::Io::Txt::read(baseQssPath));
     }
 }
 
@@ -215,7 +217,7 @@ void Stylist::setBaseQss
 )
 {
     if (auto group = m_private->findOrMake({ qWidgetType, role }))
-        group->setBaseQss(Coco::Io::readTxt(path));
+        group->setBaseQss(Coco::Io::Txt::read(path));
 }
 
 void Stylist::setCurrentTheme
@@ -260,7 +262,7 @@ void Stylist::setThemesTemplate
 )
 {
     if (auto group = m_private->findOrMake({ qWidgetType, role }))
-        group->setThemesTemplate(Coco::Io::readTxt(path));
+        group->setThemesTemplate(Coco::Io::Txt::read(path));
 }
 
 void Stylist::setUseTheme
@@ -352,7 +354,7 @@ void Stylist::Private::handleCloseEvent(QObject* watched)
 {
     // We watched for the parent's close event to close our modeless dialog, if
     // open
-    if (ownDialog && publicClass()->parent() == watched)
+    if (ownDialog && pub->parent() == watched)
         ownDialog->close();
 }
 
@@ -365,7 +367,7 @@ WidgetGroup* Stylist::Private::make(const WidgetGroup::Id& id)
 QDialog* Stylist::Private::newDialog()
 {
     auto dialog = new QDialog{};
-    auto themes_widget = new Controller(publicClass(), dialog);
+    auto themes_widget = new Controller(pub, dialog);
     auto button = new QPushButton("OK", dialog);
     auto main_layout = new QVBoxLayout(dialog);
     auto button_layout = new QVBoxLayout{};
@@ -398,7 +400,6 @@ void Stylist::Private::showOwnDialog()
         return;
     }
 
-    auto pub = publicClass();
     ownDialog = newDialog();
     ownDialog->setModal(false);
 
